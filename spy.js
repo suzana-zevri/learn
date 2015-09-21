@@ -1,4 +1,4 @@
-function Spy(target, method) {
+function spy(target, method) {
   var result = { count: 0 };
   var oldMethod = target[method];
   target[method] = function(){
@@ -8,4 +8,4 @@ function Spy(target, method) {
   return result;
 }
 
-module.exports = Spy
+module.exports = spy
