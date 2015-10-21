@@ -1,10 +1,10 @@
-var unorderedList = [5, 2, 7, 9, 1, 8, 4];
+var unorderedList = [5, 2];
 var unorderedListChars = ['A', 'D', 'S', 'A', 'B', 'R'];
 
 var quickSort = function(list) {
-    if (list.length <= 2) {
+    if (list.length < 2) {
         return list;
-    }else {
+    } else {
         var pivot = list[0];
         var less = [];
         var greater = [];
